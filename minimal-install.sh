@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Change to dir containing this script.
+HERE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+cd "$HERE"
+
 # Install Apt dependency packages from Ubuntu and Gnome/GDM session
 # files from this repo needed to build a custom ~/.xmonad/xmonad.hs
 # and run it in Gnome/GDM. In particular, we avoid installing an
